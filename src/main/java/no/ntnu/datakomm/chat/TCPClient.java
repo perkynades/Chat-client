@@ -9,9 +9,11 @@ public class TCPClient {
     private PrintWriter toServer;
     private BufferedReader fromServer;
     private Socket connection;
+    private OutputStream outputStream;
+    private InputStream inputStream;
 
     //Remote host where the server will be running
-    private static String HOST= "datakomm.work";
+    private static String HOST = "datakomm.work";
     //TCP port
     private static int PORT = 1300;
 
@@ -70,6 +72,14 @@ public class TCPClient {
     private boolean sendCommand(String cmd) {
         // TODO Step 2: Implement this method
         // Hint: Remember to check if connection is active
+        try {
+            outputStream = connection.getOutputStream();
+            toServer = new PrintWriter(outputStream, true);
+            toServer.println(cmd);
+            toServer.println("");
+        } catch (IOException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
         return false;
     }
 
