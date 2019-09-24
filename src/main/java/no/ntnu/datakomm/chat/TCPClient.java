@@ -10,6 +10,11 @@ public class TCPClient {
     private BufferedReader fromServer;
     private Socket connection;
 
+    //Remote host where the server will be running
+    private static String HOST= "datakomm.work";
+    //TCP port
+    private static int PORT = 1300;
+
     // Hint: if you want to store a message for the last error, store it here
     private String lastError = null;
 
@@ -26,6 +31,12 @@ public class TCPClient {
         // TODO Step 1: implement this method
         // Hint: Remember to process all exceptions and return false on error
         // Hint: Remember to set up all the necessary input/output stream variables
+        try {
+            connection = new Socket(host, port);
+            return true;
+        } catch (IOException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
         return false;
     }
 

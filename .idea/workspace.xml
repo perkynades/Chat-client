@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ee6173c-6e65-4c5a-8fa8-0460a0901d52" name="Default Changelist" comment="" />
+    <list default="true" id="0ee6173c-6e65-4c5a-8fa8-0460a0901d52" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/no/ntnu/datakomm/chat/TCPClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/ntnu/datakomm/chat/TCPClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/no/ntnu/datakomm/chat/TCPClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/no/ntnu/datakomm/chat/TCPClient.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +24,7 @@
   <component name="ProjectId" id="1RH5XHu6BMkvUuMqWfJHIq9iQyj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -72,8 +77,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569311219093</updated>
-      <workItem from="1569311223907" duration="73000" />
+      <workItem from="1569311223907" duration="3151000" />
     </task>
+    <task id="LOCAL−00001" summary="Added all project files">
+      <created>1569311482373</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1569311482373</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,5 +101,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added all project files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added all project files" />
   </component>
 </project>
