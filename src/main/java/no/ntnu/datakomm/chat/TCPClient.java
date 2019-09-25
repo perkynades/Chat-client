@@ -72,15 +72,23 @@ public class TCPClient {
     private boolean sendCommand(String cmd) {
         // TODO Step 2: Implement this method
         // Hint: Remember to check if connection is active
-        try {
-            outputStream = connection.getOutputStream();
-            toServer = new PrintWriter(outputStream, true);
-            toServer.println(cmd);
-            toServer.println("");
-        } catch (IOException e) {
-            System.out.println("Error: " + e.getMessage());
+        boolean isCommandSent = false;
+        if (isConnectionActive()) {
+            try {
+                outputStream = connection.getOutputStream();
+                toServer = new PrintWriter(outputStream, true);
+                toServer.println(cmd);
+                toServer.println("");
+                isCommandSent = true;
+                return isCommandSent;
+            } catch (IOException e) {
+                System.out.println("Error: " + e.getMessage());
+                isCommandSent = false;
+                return isCommandSent;
+            }
+        } else {
+            return isCommandSent;
         }
-        return false;
     }
 
     /**
