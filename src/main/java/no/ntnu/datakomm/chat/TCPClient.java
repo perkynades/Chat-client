@@ -101,7 +101,7 @@ public class TCPClient {
         // TODO Step 2: implement this method
         // Hint: Reuse sendCommand() method
         // Hint: update lastError if you want to store the reason for the error.
-        return sendCommand(message);
+        return sendCommand("msg " + message);
     }
 
     /**
@@ -112,6 +112,7 @@ public class TCPClient {
     public void tryLogin(String username) {
         // TODO Step 3: implement this method
         // Hint: Reuse sendCommand() method
+        sendCommand("login " + username);
     }
 
     /**
