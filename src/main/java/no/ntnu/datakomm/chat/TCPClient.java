@@ -64,7 +64,7 @@ public class TCPClient {
     }
 
     /**
-     * Send a command to server.
+     * Send a command to server. Also checks if the connection is alive or not.
      *
      * @param cmd A command. It should include the command word and optional attributes, according to the protocol.
      * @return true on success, false otherwise
@@ -101,7 +101,7 @@ public class TCPClient {
         // TODO Step 2: implement this method
         // Hint: Reuse sendCommand() method
         // Hint: update lastError if you want to store the reason for the error.
-        return false;
+        return sendCommand(message);
     }
 
     /**
