@@ -158,7 +158,16 @@ public class TCPClient {
         // TODO Step 3: Implement this method
         // TODO Step 4: If you get I/O Exception or null from the stream, it means that something has gone wrong
         // with the stream and hence the socket. Probably a good idea to close the socket in that case.
-
+        try {
+            inputStream = connection.getInputStream();
+            fromServer = new BufferedReader(new InputStreamReader(inputStream));
+            String oneResponseLne;
+            do {
+                oneResponseLne = fromServer.readLine();
+            } while (oneResponseLne != null);
+        } catch (IOException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
         return null;
     }
 
