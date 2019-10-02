@@ -158,17 +158,17 @@ public class TCPClient {
         // TODO Step 3: Implement this method
         // TODO Step 4: If you get I/O Exception or null from the stream, it means that something has gone wrong
         // with the stream and hence the socket. Probably a good idea to close the socket in that case.
-        String oneResponseLne = null;
+        String oneResponseLine = null;
         try {
             inputStream = connection.getInputStream();
             fromServer = new BufferedReader(new InputStreamReader(inputStream));
             do {
-                oneResponseLne = fromServer.readLine();
-            } while (oneResponseLne != null);
+                oneResponseLine = fromServer.readLine();
+            } while (oneResponseLine != null);
         } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
         }
-        return oneResponseLne;
+        return oneResponseLine;
     }
 
     /**
@@ -217,7 +217,27 @@ public class TCPClient {
             // Hint for Step 7: call corresponding onXXX() methods which will notify all the listeners
 
             // TODO Step 8: add support for incoming supported command list (type: supported)
+            while (isConnectionActive()) {
+                final int COMMAND_WORD_INDEX = 1;
+                final int COMMAND_BODY = 2;
+                try {
+                    String response = waitServerResponse();
+                    StringSplitter stringSplitter = new StringSplitter("\\s");
+                    stringSplitter.split(response, 2);
+                    String command = stringSplitter.getPart(COMMAND_WORD_INDEX);
+                    switch (command) {
+                        case "loginok":
+                            onLoginResult(true, response);
+                            break;
 
+                        case "loginerr":
+                            onLoginResult(false, stringSplitter.getPart(COMMAND_BODY));
+                            break;
+                    }
+                } catch (IllegalArgumentException e) {
+                    System.out.println("Error: "+ e.getMessage());
+                }
+            }
         }
     }
 
