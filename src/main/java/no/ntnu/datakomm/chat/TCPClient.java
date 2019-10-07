@@ -149,8 +149,7 @@ public class TCPClient {
         // Hint: Reuse sendCommand() method
         // Hint: update lastError if you want to store the reason for the error.
         String privateMessage = "privmsg " + recipient + " " + message;
-        sendCommand(privateMessage);
-        return false;
+        return sendCommand(privateMessage);
     }
 
 
