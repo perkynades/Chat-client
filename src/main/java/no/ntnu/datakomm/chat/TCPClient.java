@@ -275,8 +275,8 @@ public class TCPClient {
      * @param errMsg  Error message if any
      */
     private void onLoginResult(boolean success, String errMsg) {
-        for (ChatListener l : listeners) {
-            l.onLoginResult(success, errMsg);
+        for (ChatListener chatListener : listeners) {
+            chatListener.onLoginResult(success, errMsg);
         }
     }
 
@@ -287,6 +287,9 @@ public class TCPClient {
     private void onDisconnect() {
         // TODO Step 4: Implement this method
         // Hint: all the onXXX() methods will be similar to onLoginResult()
+        for (ChatListener chatListener : listeners) {
+            chatListener.onDisconnect();
+        }
     }
 
     /**

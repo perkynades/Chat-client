@@ -1,0 +1,56 @@
+
+]"squid:SwitchLastCaseIsDefaultCheckä""Add a default case to this switch.(¸ìù«üÿÿÿÿ8éŠİÛØ-
+Esquid:S1172½"-Remove this unused method parameter "errMsg".(æï®Ú
+Osquid:S1135"2Complete the task associated to this TODO comment.(ñ˜×¶üÿÿÿÿ
+Isquid:S11357"2Complete the task associated to this TODO comment.(˜âÏÕ
+Osquid:S1135Ø"2Complete the task associated to this TODO comment.(¦î¹Ÿøÿÿÿÿ
+Vsquid:UnusedPrivateMethod©"0Remove this unused private "onUsersList" method.(°î†ƒ
+Osquid:S1135µ"2Complete the task associated to this TODO comment.(´ÖĞüÿÿÿÿ
+Zsquid:UnusedPrivateMethodÆ"/Remove this unused private "onCmdError" method.(à„Üóüÿÿÿÿ
+Jsquid:S1135ª"2Complete the task associated to this TODO comment.(ßùŒÏ
+osquid:S1301ä"KReplace this "switch" statement by "if" statements to increase readability.(¸ìù«üÿÿÿÿ8éŠİÛØ-
+}squid:S1450"ZRemove the "inputStream" field and declare it as a local variable in the relevant methods.(İƒ©Ëøÿÿÿÿ8‰¨¥´Ø-
+Nsquid:S1135{"2Complete the task associated to this TODO comment.(îÜ×ºÿÿÿÿÿ
+Isquid:S1602À",Remove useless curly braces around statement(ñ˜²àùÿÿÿÿ
+Osquid:S1135¾"2Complete the task associated to this TODO comment.(´ÖĞüÿÿÿÿ
+Nsquid:S1135e"2Complete the task associated to this TODO comment.(İÚ®¬ûÿÿÿÿ
+>squid:S1172´"&Remove these unused method parameters.(Áİ¦‚
+[squid:UnusedPrivateMethodĞ"0Remove this unused private "onSupported" method.(æÕ’ıÿÿÿÿ
+Dsquid:S1068"(Remove this unused "HOST" private field.(˜ÕÉ­øÿÿÿÿ
+Osquid:S1135Ö"2Complete the task associated to this TODO comment.(ÿ¦‚ˆüÿÿÿÿ
+Vsquid:UnusedPrivateMethodŸ"1Remove this unused private "onDisconnect" method.(Üààa
+Usquid:UnusedPrivateMethod½"/Remove this unused private "onMsgError" method.(æï®Ú
+fsquid:S3008"ORename this field "PORT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒâÖ±
+vsquid:S1450
+"YRemove the "fromServer" field and declare it as a local variable in the relevant methods.(„½d8ÌÁ°´Ø-
+Jsquid:S1135Ñ"2Complete the task associated to this TODO comment.(Ó×Ù…
+O
+squid:S106U"9Replace this use of System.out or System.err by a logger.(äìÎÆ
+ssquid:S1450	"WRemove the "toServer" field and declare it as a local variable in the relevant methods.(Ÿ„ÄÚûÿÿÿÿ
+Jsquid:S1172Æ"-Remove this unused method parameter "errMsg".(à„Üóüÿÿÿÿ
+Osquid:S1135ˆ"2Complete the task associated to this TODO comment.(ˆØ…Úÿÿÿÿÿ
+Jsquid:S1135×"2Complete the task associated to this TODO comment.(ß³Ş±
+Xsquid:UnusedPrivateMethod´"2Remove this unused private "onMsgReceived" method.(Áİ¦‚
+fsquid:S1192("HDefine a constant instead of duplicating this literal "Error: " 4 times.(äìÎÆ8Š„¨´Ø-
+rsquid:S1450"[Remove the "outputStream" field and declare it as a local variable in the relevant methods.(Û‚õ
+Osquid:S1135Ÿ"2Complete the task associated to this TODO comment.(Ó„ê©ÿÿÿÿÿ
+ksquid:S3008"ORename this field "HOST" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜ÕÉ­øÿÿÿÿ
+W
+squid:S106î"9Replace this use of System.out or System.err by a logger.(äìÎÆ8ÜÓ¹ÛØ-
+Dsquid:S1172©",Remove this unused method parameter "users".(°î†ƒ
+Lsquid:S1172Ğ"/Remove this unused method parameter "commands".(æÕ’ıÿÿÿÿ
+Isquid:S1135I"2Complete the task associated to this TODO comment.(õƒåÍ
+Osquid:S1135 "2Complete the task associated to this TODO comment.(ıÜŒ¨şÿÿÿÿ
+Isquid:S1135!"2Complete the task associated to this TODO comment.(¹«Õ
+O
+squid:S106("9Replace this use of System.out or System.err by a logger.(äìÎÆ
+Osquid:S1135Û"2Complete the task associated to this TODO comment.(óÛ§Àıÿÿÿÿ
+Osquid:S1135Ì"2Complete the task associated to this TODO comment.(ñ˜×¶üÿÿÿÿ
+Osquid:S1135Ç"2Complete the task associated to this TODO comment.(´ÖĞüÿÿÿÿ
+Jsquid:S1135Ó"2Complete the task associated to this TODO comment.(ï¹Ãª
+Nsquid:S1135q"2Complete the task associated to this TODO comment.(š¯¹ñşÿÿÿÿ
+Jsquid:S1135“"2Complete the task associated to this TODO comment.(Ó×Ù…
+Isquid:S1612À",Replace this lambda with a method reference.(ñ˜²àùÿÿÿÿ
+?squid:S1068"(Remove this unused "PORT" private field.(ÒâÖ±
+W
+squid:S106©"9Replace this use of System.out or System.err by a logger.(äìÎÆ8Š„¨´Ø-
