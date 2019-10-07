@@ -244,6 +244,11 @@ public class TCPClient {
                         case "loginerr":
                             onLoginResult(false, stringSplitter.getPart(COMMAND_BODY));
                             break;
+
+                        case "users":
+                            String[] users = stringSplitter.getAllPartsFromString(stringSplitter.getPart(COMMAND_BODY));
+                            onUsersList(users);
+                            break;
                     }
                 } catch (IllegalArgumentException e) {
                     System.out.println("Error: "+ e.getMessage());
