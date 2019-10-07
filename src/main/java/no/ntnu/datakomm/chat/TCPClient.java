@@ -202,9 +202,7 @@ public class TCPClient {
      */
     public void startListenThread() {
         // Call parseIncomingCommands() in the new thread.
-        Thread t = new Thread(() -> {
-            parseIncomingCommands();
-        });
+        Thread t = new Thread(this::parseIncomingCommands);
         t.start();
     }
 
