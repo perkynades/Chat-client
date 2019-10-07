@@ -54,6 +54,17 @@ public class TCPClient {
     public synchronized void disconnect() {
         // TODO Step 4: implement this method
         // Hint: remember to check if connection is active
+        if (isConnectionActive()) {
+            try {
+                inputStream.close();
+                outputStream.close();
+                connection.close();
+                connection = null;
+                onDisconnect();
+            } catch (IOException e) {
+                System.out.println("Error: " + e.getMessage());
+            }
+        }
     }
 
     /**
