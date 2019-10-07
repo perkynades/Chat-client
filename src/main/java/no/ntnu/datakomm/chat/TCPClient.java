@@ -310,6 +310,9 @@ public class TCPClient {
      */
     private void onUsersList(String[] users) {
         // TODO Step 5: Implement this method
+        for (ChatListener chatListener : listeners) {
+            chatListener.onUserList(users);
+        }
     }
 
     /**
