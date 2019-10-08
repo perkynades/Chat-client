@@ -261,6 +261,13 @@ public class TCPClient {
                         case "cmderr":
                             onCmdError(stringSplitter.getPart(COMMAND_BODY));
                             break;
+
+                        case "supported":
+                            onSupported(stringSplitter.getSplittedString());
+                            break;
+
+                        default:
+                            System.out.println("Default triggered. Response: " + response);
                     }
                 } catch (IllegalArgumentException e) {
                     System.out.println("Error: "+ e.getMessage());
