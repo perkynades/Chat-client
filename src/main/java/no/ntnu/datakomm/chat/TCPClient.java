@@ -346,6 +346,9 @@ public class TCPClient {
      */
     private void onMsgError(String errMsg) {
         // TODO Step 7: Implement this method
+        for (ChatListener chatListener : listeners) {
+            chatListener.onMessageError(errMsg);
+        }
     }
 
     /**
