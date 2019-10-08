@@ -56,7 +56,6 @@ public class TCPClient {
         // Hint: remember to check if connection is active
         if (isConnectionActive()) {
             try {
-                inputStream.close();
                 outputStream.close();
                 connection.close();
                 connection = null;
@@ -248,6 +247,11 @@ public class TCPClient {
                         case "users":
                             String[] users = stringSplitter.getAllPartsFromString(stringSplitter.getPart(COMMAND_BODY));
                             onUsersList(users);
+                            break;
+
+                        case "msg":
+                            stringSplitter.split(stringSplitter.getPart(COMMAND_BODY), 2);
+                            onMsgReceived(false, stringSplitter.getPart(COMMAND_WORD_INDEX), stringSplitter.getPart(COMMAND_BODY));
                             break;
                     }
                 } catch (IllegalArgumentException e) {
