@@ -4,7 +4,6 @@
     <list default="true" id="0ee6173c-6e65-4c5a-8fa8-0460a0901d52" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/ntnu/datakomm/chat/TCPClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/ntnu/datakomm/chat/TCPClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/no/ntnu/datakomm/chat/TCPClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/no/ntnu/datakomm/chat/TCPClient.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +40,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -86,7 +86,7 @@
       <updated>1569311219093</updated>
       <workItem from="1569311223907" duration="5652000" />
       <workItem from="1569393277500" duration="12647000" />
-      <workItem from="1570432419319" duration="2952000" />
+      <workItem from="1570432419319" duration="4514000" />
     </task>
     <task id="LOCAL−00001" summary="Added all project files">
       <created>1569311482373</created>

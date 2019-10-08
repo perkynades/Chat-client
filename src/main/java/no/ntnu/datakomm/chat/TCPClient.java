@@ -329,6 +329,10 @@ public class TCPClient {
      */
     private void onMsgReceived(boolean priv, String sender, String text) {
         // TODO Step 7: Implement this method
+        TextMessage textMessage = new TextMessage(sender, priv, text);
+        for (ChatListener chatListener : listeners) {
+            chatListener.onMessageReceived(textMessage);
+        }
     }
 
     /**
