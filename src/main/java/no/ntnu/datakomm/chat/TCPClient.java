@@ -257,6 +257,10 @@ public class TCPClient {
                         case "msgerr":
                             onMsgError(stringSplitter.getPart(COMMAND_BODY));
                             break;
+
+                        case "cmderr":
+                            onCmdError(stringSplitter.getPart(COMMAND_BODY));
+                            break;
                     }
                 } catch (IllegalArgumentException e) {
                     System.out.println("Error: "+ e.getMessage());
