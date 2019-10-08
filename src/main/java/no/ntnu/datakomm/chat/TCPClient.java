@@ -271,6 +271,10 @@ public class TCPClient {
                     }
                 } catch (IllegalArgumentException e) {
                     System.out.println("Error: "+ e.getMessage());
+                } catch (IndexOutOfBoundsException e) {
+                    System.out.println("Error: " + e.getMessage());
+                } catch (Exception e) {
+                    System.out.println("Oh no...");
                 }
             }
         }
