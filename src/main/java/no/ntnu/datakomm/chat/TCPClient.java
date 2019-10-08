@@ -379,5 +379,8 @@ public class TCPClient {
      */
     private void onSupported(String[] commands) {
         // TODO Step 8: Implement this method
+        for (ChatListener chatListener : listeners) {
+            chatListener.onSupportedCommands(commands);
+        }
     }
 }
